@@ -14,6 +14,7 @@ module.exports = async (req, res) => {
     .replace('"https://www.craft.do"', '"/"') // Replace logo url
     .replace('?utm_source=CraftShare', '') // Replace logo url
     .replace('flex items-start group"', 'flex items-start group",style:{visibility:"hidden"}') // Hide Craft.do upper right corner logo
+    .replace('sc-bXGyLb dipnzq"', 'sc-bXGyLb dipnzq",style:{visibility:"hidden"}') // Hide Craft.do upper right corner logo
     .replace(
       /function p\(e\)\{var t=e.color\|\|"currentColor";return\(0,i.jsx\)\("svg",\{className:e.className.*id:"blue"\}\)\]\}\)\}\)\}\)/,
       'function p(e){var t=e.color||"currentColor";return(0,i.jsx)("img",{className:e.className,alt:"logo",src:"/favicon.svg"})'
